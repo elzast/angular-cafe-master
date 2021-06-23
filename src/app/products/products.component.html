@@ -1,0 +1,7 @@
+<ul>
+  <app-product-card
+    *ngFor="let product of products; index as i"
+    [prodRef]="product"
+    (toggleEvent)="onToggle($event)"
+  ></app-product-card>
+</ul>

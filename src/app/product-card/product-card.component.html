@@ -1,0 +1,16 @@
+<li>
+  <!-- name: string;
+  image: string;
+  price: number;
+  type: string;
+  addCart: boolean; -->
+  <p>Name: {{ prodRef.name }}</p>
+  <p>Image: {{ prodRef.image }}</p>
+  <p>Type: {{ prodRef.type }}</p>
+  <button
+    (click)="emitToggleEvent(prodRef)"
+    [ngClass]="{ added: prodRef.addCart }"
+  >
+    ❤
+  </button>
+</li>
