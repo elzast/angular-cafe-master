@@ -92,6 +92,7 @@ export class ProductService {
       addCart: false,
     },
   ];
+
   constructor() {}
 
   getProducts = (): Products[] => {
