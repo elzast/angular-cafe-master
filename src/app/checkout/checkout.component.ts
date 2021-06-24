@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input } from '@angular/core';
 import { Products } from '../interfaces/products';
 import { ProductService } from '../product.service';
 
@@ -8,6 +8,7 @@ import { ProductService } from '../product.service';
   styleUrls: ['./checkout.component.css'],
 })
 export class CheckoutComponent implements OnInit {
+  isHidden: boolean = false;
   added: Products[] = [];
 
   constructor(private productService: ProductService) {}
@@ -20,5 +21,8 @@ export class CheckoutComponent implements OnInit {
     this.added = products.filter((item) => {
       return item.addCart;
     });
+  };
+  toggleCheckout = (): void => {
+    this.isHidden = !this.isHidden;
   };
 }

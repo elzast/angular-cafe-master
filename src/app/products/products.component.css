@@ -1,0 +1,20 @@
+.products-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min-content;
+  padding: 5px;
+  align-items: center;
+  margin: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .products-section {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,16 +1,17 @@
-<li>
-  <!-- name: string;
-  image: string;
-  price: number;
-  type: string;
-  addCart: boolean; -->
-  <p>Name: {{ prodRef.name }}</p>
-  <p>Image: {{ prodRef.image }}</p>
-  <p>Type: {{ prodRef.type }}</p>
-  <button
-    (click)="emitToggleEvent(prodRef)"
-    [ngClass]="{ added: prodRef.addCart }"
-  >
-    ❤
-  </button>
-</li>
+<section class="product-section">
+  <div class="product-menu-container">
+    <li class="product">
+      <p class="product-text">Name: {{ prodRef.name }}</p>
+      <img class="product-image" src="{{ prodRef.image }}" alt="Movie img" />
+
+      <p class="product-text">Price: ${{ prodRef.price }}</p>
+      <button
+        class="btn"
+        (click)="emitToggleEvent(prodRef)"
+        [ngClass]="{ added: prodRef.addCart }"
+      >
+        ❤
+      </button>
+    </li>
+  </div>
+</section>

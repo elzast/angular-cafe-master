@@ -1,0 +1,28 @@
+.product-menu-container {
+  width: 100%;
+}
+
+.product {
+  width: 275px;
+  padding: 10px 10px;
+  margin: 10px;
+  border: 5px dotted blueviolet;
+  background-color: white;
+  list-style: none;
+}
+.product-image {
+  width: 12em;
+  height: 12em;
+  align-content: inherit;
+}
+/* @media only screen and (min-width: 768px) {
+  
+  .product-menu-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: initial;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}  */

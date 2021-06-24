@@ -1,4 +1,13 @@
-<app-product-card
-  *ngFor="let added of added"
-  [prodRef]="added"
-></app-product-card>
+<section class="product-section">
+  <div class="checkout-products-div">
+    <app-product-card
+      *ngFor="let added of added"
+      [prodRef]="added"
+    ></app-product-card>
+  </div>
+</section>
+<button (click)="toggleCheckout()">Checkout</button>
+<div *ngIf="isHidden" class="checkout-confirmation">
+  <button (click)="toggleCheckout()">X</button>
+  <p class="checkout-text">Thank you for your purchase!</p>
+</div>

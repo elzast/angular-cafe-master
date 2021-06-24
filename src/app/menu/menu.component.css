@@ -16,23 +16,28 @@
 
 .menu-title {
   padding: 20px;
+  font-size: 1.5em;
+  color: blueviolet;
+  text-shadow: 1px 1px black;
 }
 .menu-img {
   width: 6em;
   height: 6em;
   flex: 1;
 }
-.menu-link-div {
+.menu-heading-div {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
 }
-.menu-link {
+.menu-heading {
   font-size: 3em;
-  padding: 0;
+  padding: 10px;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
-  color: blueviolet;
+  color: chartreuse;
+  text-shadow: 3px 3px black;
 }
 @media only screen and (min-width: 768px) {
   .menus-container {
